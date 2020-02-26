@@ -759,7 +759,7 @@ def Test_process(State_file, TEST_SAVE_PATH, epsilon):
 
 if __name__ == '__main__':
 
-    NOW = datetime.datetime.now().strftime('%Y%m%d-%H%M%S') + SOME_TAG
+    NOW = datetime.datetime.now().strftime('%Y%m%d-%H%M%S') + '_Start'
     FM = file_manger.file_manger(LOG_DIR,NOW)
     SAVE_DIR = FM.log_path
     FM.create_dir()
@@ -853,7 +853,7 @@ if __name__ == '__main__':
     LAST_SAVE_PATH = 0
     for i in range(10):
         
-        NOW = datetime.datetime.now().strftime('%Y%m%d-%H%M%S') + '_Residual_midLayer_400_200_200_100_tanh'
+        NOW = datetime.datetime.now().strftime('%Y%m%d-%H%M%S') + SOME_TAG
         FM = file_manger.file_manger(LOG_DIR,NOW)
         SAVE_DIR = FM.log_path
         FM.create_dir()    
